@@ -194,7 +194,7 @@ public class RecordsControllerTest {
                 .andExpect(status().isNotFound());
     }
 
-    //create new users, testing the post route
+    //create new records, testing the post route
 
     @Test
     public void createRecord_success_returnsStatusOk() throws Exception {

@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Record {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private Long id;
 
     @Column(name = "URL_LINK")
@@ -21,7 +21,8 @@ public class Record {
     private String category;
 
 
-    public Record(String urlLink, String category) {
+    public Record(String urlLink, String category, Long id) {
+        this.id = id;
         this.urlLink = urlLink;
         this.category= category;
     }

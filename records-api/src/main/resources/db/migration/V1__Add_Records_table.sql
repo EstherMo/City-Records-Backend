@@ -1,5 +1,5 @@
 create table RECORDS (
-  ID serial,
+  ID BIGINT,
   URL_LINK VARCHAR(500) NOT NULL,
   CATEGORY VARCHAR(100) NOT NULL
 )
